@@ -8,9 +8,9 @@ import AddUser from './components/User/AddUser';
 function App() {
   const [userlist,setuserlist]=useState([]);
 
-  const adduserhandler=(uName,uAge)=>{
+  const adduserhandler=(uName,uAge,uCollege)=>{
     setuserlist((prevUserList)=>{
-      return [...prevUserList,{name:uName,age:uAge, id:Math.random().toString }];
+      return [...prevUserList,{name:uName,age:uAge,college:uCollege, id:Math.random().toString }];
     });
   }
   return (
